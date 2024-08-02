@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const doctors = [
-      { name: 'Dr. Smith', totalSlots: 16, availableSlots: 16, bookedSlots: 0, slots: {} },
-      { name: 'Dr. Jones', totalSlots: 16, availableSlots: 16, bookedSlots: 0, slots: {} },
+      { name: 'Dr. Sanjay', totalSlots: 16, availableSlots: 16, bookedSlots: 0, slots: {} },
+      { name: 'Dr. Saisri', totalSlots: 16, availableSlots: 16, bookedSlots: 0, slots: {} },
   ];
 
   const appointments = [];
