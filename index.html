@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Doctor Appointment Booking</h1>
+        </header>
+
+        <section id="booking-section">
+            <h2>Book Appointment</h2>
+            <form id="booking-form">
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" required>
+
+                <label for="doctor-select">Doctor:</label>
+                <select id="doctor-select" required></select>
+
+                <label for="appointment-date">Date:</label>
+                <input type="date" id="appointment-date" required>
+
+                <label for="appointment-time">Time:</label>
+                <select id="appointment-time" required></select>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+
+        <section id="cancel-section">
+            <h2>Cancel Appointment</h2>
+            <form id="cancel-form">
+                <label for="appointment-id">Appointment ID:</label>
+                <input type="text" id="appointment-id" required>
+                <button type="submit">Cancel Appointment</button>
+            </form>
+        </section>
+
+        <section id="view-section">
+            <h2>View Appointments</h2>
+            <button id="view-appointments-btn">View All Appointments</button>
+            <ul id="appointment-list"></ul>
+        </section>
+
+        <section id="doctors-section">
+            <h2>Doctors</h2>
+            <div id="doctors-container"></div>
+            <label for="view-date">Select Date:</label>
+            <input type="date" id="view-date">
+            <button id="view-slots-btn">View Available Slots</button>
+            <div id="slots-container"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
